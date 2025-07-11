@@ -29,8 +29,10 @@ if uploaded_file:
     st.pyplot(fig)
 
     # 간단한 평균 온도 표시
-    avg_temp = np.mean(temp_array)
+       avg_temp = np.mean(temp_array)
     st.write(f"📊 이미지 전체의 평균 추정 온도: **{avg_temp:.1f} K**")
 
     st.markdown("""
-    > ❗ 주의: 이 온도는 밝기를 바탕으로 단순 추정한 값으로, 실제 성간물질의 물리적 온도와는 차이가 있습니다.
+    > ❗ 주의: 이 온도는 밝기를 바탕으로 단순 추정한 값으로,  
+    > 실제 성간물질의 물리적 온도와는 차이가 있습니다.
+    """)
