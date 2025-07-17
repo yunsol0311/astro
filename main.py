@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 st.title("은하 사진으로 추정한 성간물질 온도 분포 시각화")
 
 # 이미지 업로드
-uploaded_file = st.file_uploader("은하 이미지를 업로드하세요 (JPG/PNG)", type=["jpg", "jpeg", "png"])
+uploaded_file = st.file_uploader("은하 이미지를 업로드하세요 (FITS)", type=["FITS"])
 
 if uploaded_file:
     # 원본 이미지 열기
