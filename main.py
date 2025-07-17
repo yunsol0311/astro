@@ -17,7 +17,7 @@ uploaded_file = st.file_uploader(
 if uploaded_file:
     # 원본 이미지 열기
     image = Image.open(uploaded_file)
-    st.image(image, caption='업로드한 은하 이미지', use_column_width=True)
+    st.image(image, caption='업로드한 은하 이미지', use_container_width=True)
 
     # 흑백(밝기) 이미지로 변환
     gray_image = ImageOps.grayscale(image)
