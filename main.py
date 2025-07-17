@@ -5,9 +5,15 @@ import matplotlib.pyplot as plt
 
 st.title("은하 사진으로 추정한 성간물질 온도 분포 시각화")
 
-# 이미지 업로드
-uploaded_file = st.file_uploader("은하 이미지를 업로드하세요 (fits)", type=["fits"])
+# --- 파일 업로더 ---
 
+uploaded_file = st.file_uploader(
+
+    "분석할 FITS 파일을 선택하세요.",
+
+    type=['fits', 'fit', 'fz']
+
+)
 if uploaded_file:
     # 원본 이미지 열기
     image = Image.open(uploaded_file)
